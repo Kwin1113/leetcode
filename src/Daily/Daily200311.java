@@ -29,7 +29,7 @@ import java.util.Arrays;
  * 3 <= A.length <= 50000
  * -10^4 <= A[i] <= 10^4
  */
-public class Daily20200311 {
+public class Daily200311 {
 
     static int[] a1 = new int[]{0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1};
     static int[] a2 = new int[]{0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1};
