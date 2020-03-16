@@ -26,7 +26,7 @@ package Daily;
  * <p>
  * 注意: 给定的矩阵grid 的长度和宽度都不超过 50。
  */
-public class Daily20031 {
+public class Daily200315 {
 
     static int[][] grid1 = new int[][]{
             {0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
