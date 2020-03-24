@@ -3,8 +3,8 @@ package Daily;
 import java.util.Arrays;
 
 /**
- * @author kwin <969263948@qq.com>
- * @since 2020/3/20 11:44
+ * @author Kwin
+ * @since 2020/3/20 21:51
  *
  * 面试题40. 最小的k个数
  *
@@ -21,7 +21,7 @@ import java.util.Arrays;
  * 限制：
  * 0 <= k <= arr.length <= 10000
  * 0 <= arr[i] <= 10000
- **/
+ */
 public class Daily200320 {
 
     static int[] arr1 = new int[]{3, 2, 1};
@@ -30,10 +30,14 @@ public class Daily200320 {
     static int[] arr2 = new int[]{0, 1, 2, 1};
     static int k2 = 1;
 
+    static int[] arr3 = new int[]{4, 5, 1, 6, 2, 7, 3, 8};
+    static int k3 = 4;
+
     public static void main(String[] args) {
-//        int[] ints = solution1(arr1, k1);
-        int[] ints = solution1(arr2, k2);
-        for (int i : ints) {
+//        int[] res = solution1(arr1, k1);
+//        int[] res = solution1(arr2, k2);
+        int[] res = solution1(arr3, k3);
+        for (int i : res) {
             System.out.println(i);
         }
     }
