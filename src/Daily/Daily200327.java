@@ -64,6 +64,13 @@ public class Daily200327 {
         System.out.println(solution1(deck5));
         System.out.println(solution1(deck6));
         System.out.println(solution1(deck7));
+        System.out.println(bestSolution(deck1));
+        System.out.println(bestSolution(deck2));
+        System.out.println(bestSolution(deck3));
+        System.out.println(bestSolution(deck4));
+        System.out.println(bestSolution(deck5));
+        System.out.println(bestSolution(deck6));
+        System.out.println(bestSolution(deck7));
 //        System.out.println(devide(4));
     }
 
@@ -105,6 +112,31 @@ public class Daily200327 {
             }
         }
         return devide;
+    }
+
+    static boolean bestSolution(int[] deck) {
+        if (deck.length < 2) {
+            return false;
+        }
+
+        int[] count = new int[deck.length];
+        for (int i : deck) {
+            count[i]++;
+        }
+
+        int g = -1;
+        for (int i : deck) {
+            if (g == -1) {
+                g = count[i];
+            } else {
+                g = gcd(g, count[i]);
+            }
+        }
+        return g > 1;
+    }
+
+    static int gcd(int x, int y) {
+        return x == 0 ? y : gcd(y % x, x);
     }
 
 }
